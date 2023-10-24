@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1,h2,h3,h4,h5,h6{
+        font-weight: bold;
+    }
+}
+
+@layer components{
+    .wrapper{
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+        max-width: 1200px;
+    }
+
+    .cta{
+        background-color: #000;
+        color: white;
+        display: inline-block;
+        padding:1rem 2rem;
+        border-radius: 1rem;
+        transition: .3s transform;
+        text-align: center;
+    }
+
+    .cta:hover{
+       transform: scale(1.01);
+    }
+}
